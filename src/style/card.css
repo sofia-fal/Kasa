@@ -1,0 +1,15 @@
+.card {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 0 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}

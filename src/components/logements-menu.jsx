@@ -1,19 +1,20 @@
 import React from 'react'
 import '../style/logements-menu.css'
 import Card from './card'
+import logementdata from '../data/logements.json'
 
 function LogementsMenu() {
   return (
     <div className='logements-menu'>
-        <h2>Featured Listings</h2>
-        <div className='grid-container'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-        </div>
+      <div className='grid-container'>
+        {logementdata.map((logement) => (
+          <Card
+          key={logement.id}
+          title={logement.title}
+          cover={logement.cover}
+          />
+        ))}
+      </div>
     </div>
   )
 }

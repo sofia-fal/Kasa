@@ -1,12 +1,13 @@
 import React from 'react'
 import '../style/card.css'
 
-function Card() {
+function Card({ id, title, cover }) {
   return (
-    <div className='card'>
-        <div className='card-content'>
-            Titre de la location
-        </div>
+    <div className='card' date-id={id}>
+      <div className='card-cover'>
+        <img src={cover} alt={title} />
+        <div className='card-title'>{title}</div>
+      </div>
     </div>
   )
 }

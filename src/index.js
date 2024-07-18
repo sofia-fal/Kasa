@@ -3,25 +3,23 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import ErrorPage from './components/error'
-import Header from './components/header'
-import Footer from './components/footer'
-import Banner from './components/banner'
-import LogementsMenu from './components/logements-menu'
+import Home from './pages/home'
+import About from './pages/a-propos'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <>
-        <Header />
-        <Banner />
-        <LogementsMenu />
-        <Footer />
-      </>
-    ),
-    errorElement: <ErrorPage />,
+      <Home />
+    )
   },
+  {
+    path: "/a-propos",
+    element: (
+      <About />
+    )
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))

@@ -1,7 +1,6 @@
 .card {
     width: 100%;
     max-width: 340px;
-    min-width: 340px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -10,7 +9,7 @@
     position: relative;
 }
 
-.card-cover img {
+.card-img {
     width: 100%;
     height: auto;
     min-height: 340px;
@@ -29,6 +28,8 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    color: #fff;
+    font-weight: 700;
 }
 
 /* Media query */
@@ -45,11 +46,7 @@
 }
 
 @media screen and (max-width: 460px) {
-    .card {
-        max-width: 200px;
-    }
-
-    .card-cover img {
+    .card-img {
         min-height: 255px;
     }
 }

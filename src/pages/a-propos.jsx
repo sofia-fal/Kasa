@@ -1,9 +1,9 @@
 import React from 'react'
 
-function apropos() {
+function About() {
   return (
     <div>apropos</div>
   )
 }
 
-export default apropos
+export default About

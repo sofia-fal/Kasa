@@ -1,0 +1,32 @@
+footer {
+    height: 209px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    height: 46px;
+    width: 513px;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* Media query */
+@media screen and (max-width: 600px) {
+    .content {
+        font-size: 12px;
+        line-height: 1.5em;
+        width: 100%;
+    }
+
+    .content span {
+        display: block;
+    }
+}

@@ -4,9 +4,9 @@ import logo from '../assets/LOGO.svg'
 
 function header() {
   return (
-    <header className='header'>
+    <header>
       <img src={logo} alt="Logo" className='logo' />
-      <nav className='navigation'>
+      <nav>
         <ul>
           <li><a href="/">Accueil</a></li>
           <li><a href="/a-propos">A Propos</a></li>

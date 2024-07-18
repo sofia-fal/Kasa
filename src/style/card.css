@@ -1,3 +1,4 @@
+/* General Styles */
 .card {
     width: 100%;
     max-width: 340px;
@@ -22,17 +23,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px 20px;
+    padding: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 26px;
-    letter-spacing: 0em;
     text-align: left;
     color: #fff;
     font-weight: 700;
 }
 
-/* Media query */
+/* Media Queries */
 @media screen and (max-width: 1420px) {
     .card {
         max-width: 100%;

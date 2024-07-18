@@ -1,3 +1,4 @@
+/* General Styles */
 .banner {
     position: relative;
     width: 100%;
@@ -29,7 +30,7 @@
     white-space: nowrap;
 }
 
-/* Media query */
+/* Media Queries */
 @media screen and (max-width: 960px) {
     .banner {
         margin-top: 20px;
@@ -37,17 +38,16 @@
 
     .banner-text {
         line-height: 24px;
-        letter-spacing: 0em;
+        letter-spacing: 0;
     }
 }
 
 @media screen and (max-width: 800px) {
     .banner-text {
-        line-height: 24px;
-        letter-spacing: 0em;
         font-size: 26px;
         text-align: left;
     }
+
     .banner-text span {
         display: block;
     }

@@ -39,9 +39,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: #999999 underline;
-}
+
+nav ul li .active {
+    text-decoration: underline;
+    text-decoration-color: grey;
+  }
 
 /* Media query */
 @media screen and (max-width: 800px) {

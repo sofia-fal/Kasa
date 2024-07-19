@@ -1,0 +1,78 @@
+.collapse {
+    width: 100%;
+}
+
+.collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    color: #fff;
+    border-radius: 5px;
+    height: 52px;
+    padding: 0 20px 0 10px;
+}
+
+.collapse-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+}
+
+.collapse-icon.open {
+    transform: rotate(180deg);
+}
+
+.collapse-icon {
+    cursor: pointer;
+    transition: transform 0.16s ease;
+}
+
+.collapse-content {
+    background-color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 5px;
+    padding: 0 28px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.collapse-content.open {
+    padding: 25px 28px 20px 20px;
+    max-height: 1000px;
+}
+
+/* Media query */
+@media screen and (max-width: 600px) {
+    .collapse-header {
+        height: 30px;
+        padding: 10px;
+    }
+    .collapse-title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .collapse svg {
+        width: 20px;
+        height: 16px;
+    }
+    .collapse-content {
+        font-size: 12px;
+        line-height: 17px;
+        padding: 0 20px;
+    }
+    .collapse-content.open {
+        padding: 13px 20px 19px 20px;
+    }
+}

@@ -1,9 +1,12 @@
 import React from 'react'
+import Logement from '../components/logements-page'
 
-function pagelogement() {
+function PageLogement() {
   return (
-    <div>pagelogement</div>
+    <>
+      <Logement />
+    </>
   )
 }
 
-export default pagelogement
+export default PageLogement

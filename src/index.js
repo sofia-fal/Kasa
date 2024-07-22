@@ -5,6 +5,7 @@ import './index.css'
 import reportWebVitals from './reportWebVitals'
 import Home from './pages/home'
 import About from './pages/a-propos'
+import ErrorPage from './pages/errorpage'
 
 
 const router = createBrowserRouter([
@@ -12,7 +13,9 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <Home />
-    )
+    ),
+    errorElement:
+    <ErrorPage />
   },
   {
     path: "/a-propos",

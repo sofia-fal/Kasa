@@ -1,0 +1,54 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel__images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel__image {
+  flex: 0 0 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  display: none;
+}
+
+.carousel__image--active {
+  opacity: 1;
+  display: block;
+}
+
+.carousel__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel__button--left {
+  left: 10px;
+}
+
+.carousel__button--right {
+  right: 10px;
+}
+
+.carousel__button svg {
+  fill: white;
+}

@@ -1,3 +1,7 @@
+.details {
+    font-family: 'Montserrat', sans-serif;
+}
+
 ul,
 li {
     list-style: none;
@@ -5,37 +9,111 @@ li {
     margin: 0;
 }
 
+/* Section styles */
+.host-section {
+    padding-bottom: 20px;
+}
+
+.desc-equip {
+    display: flex;
+    gap: 76px;
+    padding-bottom: 50px;
+}
+
+/* Heading styles */
 h2 {
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 51px;
-    color: #FF6060;
     text-align: left;
+    color: #FF6060;
     margin-bottom: 0;
 }
 
+/* Text styles */
 .location {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 26px;
     text-align: left;
 }
 
 .tags {
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-bottom: 24px;
-}
-
-.tag {
-    height: 28px;
+    height: 25px;
     border-radius: 8px;
     background-color: #FF6060;
-    color: #FFFFFF;
     font-size: 14px;
     font-weight: 700;
-    text-align: center;
-    padding: 0 22px;
     line-height: 25px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 22px;
+    color: #FFFFFF;
+}
+
+/* Layout styles */
+.host {
+    display: flex;
+    gap: 10px;
+    padding: 24px 0 21px;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FF6060;
+    font-size: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media query */
+@media screen and (max-width: 800px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .host-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .host {
+        order: 2;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: right;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .location {
+        font-size: 15px;
+    }
+
+    .desc-equip {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 27px;
+    }
+
+    .rating svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rating {
+        gap: 2px;
+    }
 }

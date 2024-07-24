@@ -5,6 +5,7 @@
     max-width: 100%;
     margin: 0 auto;
     border-radius: 15px;
+    filter: drop-shadow(0px 2px 2px #00000059);
 }
 
 .banner-image {
@@ -50,5 +51,11 @@
 
     .banner-text span {
         display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        filter: none;
     }
 }

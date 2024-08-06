@@ -6,7 +6,7 @@ function Card({ id, title, cover }) {
   const navigate = useNavigate()
 
   const cardClick = () => {
-    navigate(`/logement/${id}`)
+    navigate(`/Kasa/logement/${id}`)
   }
 
   return (

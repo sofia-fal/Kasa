@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import './index.css'
 import Layout from './components/layout'
 import Header from './components/header'
@@ -17,10 +17,11 @@ root.render(
       <Layout>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/Kasa' element={<Home />} />
         <Route path='*' element={<ErrorPage />} />
-        <Route path='/a-propos' element={<About />} />
-        <Route path='/logement/:id' element={<PageLogement />} />
+        <Route path='/Kasa/a-propos' element={<About />} />
+        <Route path='/Kasa/logement/:id' element={<PageLogement />} />
+        <Route path='/' element={<Navigate replace to="/Kasa" />} />
       </Routes>
       </Layout>
       <Footer />

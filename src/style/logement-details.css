@@ -39,16 +39,19 @@ h2 {
 }
 
 .tags {
-    height: 25px;
-    border-radius: 8px;
-    background-color: #FF6060;
     font-size: 14px;
     font-weight: 700;
-    line-height: 25px;
     text-align: center;
-    display: inline-block;
-    padding: 0 22px;
+    display: flex;
+    gap: 1vh;
     color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.tags li {
+    padding: 4px 22px;
+    border-radius: 8px;
+    background-color: #FF6060;
 }
 
 /* Layout styles */

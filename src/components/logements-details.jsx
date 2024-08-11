@@ -20,7 +20,7 @@ function Details({ logement }) {
                 </div>
                 <div className='host-section'>
                     <div className='host'>
-                    <p>{host.name}</p>
+                    <div><p>{host.name.split(' ')[0]}</p><p>{host.name.split(' ')[1]}</p></div>
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <clipPath id="clip-circle">

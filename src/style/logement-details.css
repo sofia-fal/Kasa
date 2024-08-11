@@ -14,6 +14,12 @@ li {
     padding-bottom: 20px;
 }
 
+.host-section p {
+    margin: 0;
+    padding: 0;
+}
+
+
 .desc-equip {
     display: flex;
     gap: 76px;
